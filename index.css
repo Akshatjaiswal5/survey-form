@@ -1,0 +1,68 @@
+#title{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ display: block;
+ text-align: center;
+ margin-left: auto;
+ margin-right: auto;
+}
+#description{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ text-align: center;
+ font-size: 1.33em;
+}
+#survey-form{
+ background-color: whitesmoke;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ padding: 1em;
+ text-align: justify;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-size: 1.5em;
+ width: -moz-fit-content;
+ width: fit-content;
+}
+.form-element{
+ margin-top: 0.75em;
+ margin-bottom: 0.75em;
+}
+#name-label{}
+#email-label{}
+#number-label{}
+#name{
+ width: 20em;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-size: 0.75em;
+ margin-left: 0.75em;
+}
+#email{
+ width: 20em;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-size: 0.75em;
+ margin-left: 0.75em;
+}
+#number{
+ width: 10em;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-size: 0.75em;
+ margin-left: 0.75em;
+}
+#dropdown{
+ font-size: 0.75em;
+}
+#branch-label{}
+.batch-label{}
+.checkbox-label{}
+.batch-buttons{}
+.checkboxes{}
+#feedback{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-size: 0.75em;
+ width: 30em;
+ padding: 0.75em;
+}
+#feedback-label{}
+#submit{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-size: 0.75em;
+}
