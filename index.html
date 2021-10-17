@@ -10,7 +10,7 @@
 <body>
 <h1 id="title">Feedback Form</h1>
 <p id="description">A college wide feedback form for students.</p>
-<form action="" id="survey-form" netlify>
+<form action="" id="survey-form" name="form" >
  <label for="name" id="name-label" class="form-element" >Name</label>
  <input type="text" id="name" placeholder="Enter your name" required class="form-element" autocapitalize="words"></br>
  <label for="email" id="email-label" class="form-element">Email</label>
@@ -42,7 +42,7 @@
  <label for="out-of-state-immigrant" class="checkbox-label form-element"> I am from outside of M.P.</label></br>
  <label for="feedback" id="feedback-label" class="form-element">Feedback</label></br>
  <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Enter your feedback here" class="form-element"></textarea></br>
- <button id="submit" class="form-element">Submit</button>
+ <button id="submit" name="submit" class="form-element" onclick="run()">Submit</button>
 </form>
 </body>
 </html>
