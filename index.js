@@ -1,36 +1,27 @@
-function run()
-{
- event.preventDefault();
- const name=document.getElementById('name').value;
- const email=document.getElementById('email').value;
- const number=document.getElementById('number').value;
- const branch=document.getElementById('dropdown').value;
- const batch=document.querySelector('input[name="batch"]:checked').value;;
- const diplomaStudent=document.getElementById('diploma-student').checked;
- const hostelite=document.getElementById('hostelite').checked;
- const immigrant=document.getElementById('out-of-state-immigrant').checked;
- const feedback=document.getElementById('feedback').value;
+var express = require('express');
+const path = require('path');
+var app = express();
+app.use(express.json());
 
- var data={
-  'name':name,
-  'email':email,
-  'number':number,
-  'branch': branch,
-  'batch': batch,
-  'diplomaStudent': diplomaStudent,
-  'hostelite': hostelite,
-  'immigrant': immigrant,
-  'feedback': feedback,
- }
+app.get('/', function(req, res) {
+   res.sendFile(path.join(__dirname, '/index.html'));
+ });
 
- fetch(location.href, {
-  method: 'POST',
-  headers:{},
-  body:data
- })
- .catch
- {
-  alert("Network error");
- }
+app.get('/index.css', function(req, res) {
+   res.sendFile(path.join(__dirname, '/index.css'));
+ });
 
-}
+app.get('/index.js', function(req, res) {
+   res.sendFile(path.join(__dirname, '/index.js'));
+ });
+
+app.post('/', function(req, res) {
+  console.log(req.body);
+ });
+
+var server = app.listen(8081, function () {
+   var host = server.address().address
+   var port = server.address().port
+   
+   console.log("Example app listening at http://%s:%s", host, port)
+})
